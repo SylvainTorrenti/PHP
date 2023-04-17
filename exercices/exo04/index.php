@@ -5,6 +5,7 @@ $titre = "Exo 04"; // Mettre le titre de la page
 <!-- mettre votre code ici -->
 <?php
 $rand = rand(1, 20);
+echo "<h1>Le nombre est : " . $rand . "<br></h1>";
 if ($rand <= 5) {
     echo "Il est compris entre 1 et 5";
 } elseif ($rand <= 10) {
