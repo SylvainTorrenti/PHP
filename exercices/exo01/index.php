@@ -8,21 +8,22 @@ $a = 3;
 $b = 5;
 $c = 7;
 echo "********** Avant permutation ********** <br>";
-echo "A : " . $a;
+echo "A : $a";
 echo "<br>";
-echo "B : " . $b;
+echo "B : $b";
 echo "<br>";
-echo "C : " . $c;
+echo "C : $c";
 echo "<br>";
 echo "********** Aprés permutation ********** <br>";
-$a = 5;
-$b = 7;
-$c = 3;
-echo "A : " . $a;
+$tmp = $a;
+$a = $b;
+$b = $c;
+$c = $tmp;
+echo "A : $a";
 echo "<br>";
-echo "B : " . $b;
+echo "B : $b";
 echo "<br>";
-echo "C : " . $c;
+echo "C : $c";
 ?>
 
 <?php
