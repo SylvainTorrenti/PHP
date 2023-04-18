@@ -1,18 +1,25 @@
 <?php ob_start(); //  ne pas modifier
-$titre = "Exo 09 - Boucles"; // Mettre le titre de la page
+$titre = "Exo 09"; // Mettre le titre de la page
 ?>
 
 <!-- mettre votre code ici -->
 <?php
+$rand = rand(1, 20);
+$i = 1;
 
+while ($rand <= 15) {
+    echo "Essai $i : $rand est trop petit (<15)<br>";
+    $rand = rand(1, 20);
+    $i++;
+}
 
 ?>
 
 <?php
-    /**
-     * Ne pa modifier
-     * permet d'inclure le menu et le template
-     */
-    $content = ob_get_clean(); 
-    require "../../partials/layout.php";
+/**
+ * Ne pa modifier
+ * permet d'inclure le menu et le template
+ */
+$content = ob_get_clean();
+require "../../partials/layout.php";
 ?>
