@@ -5,15 +5,15 @@ $titre = "Exo 11 "; // Mettre le titre de la page
 <!-- mettre votre code ici -->
 <?php
 $nbChercher = 245;
-$nbRand = rand(100, 999);
+$nbRand = -1;
 $coup = 0;
 while (!($nbChercher == $nbRand)) {
-    echo "Tirage $coup : $nbRand <br>";
     $coup++;
     $nbRand = rand(100, 999);
+    echo "Tirage $coup : $nbRand <br>";
 }
-echo "Tirage $coup : $nbRand <br>";
 echo "$nbChercher trouvé en $coup coups";
+
 ?>
 
 <?php
