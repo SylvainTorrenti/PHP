@@ -12,7 +12,7 @@ while ($rand <= 15) {
     $rand = rand(1, 20);
     $i++;
 }
-
+echo "Le chiffre est $rand";
 ?>
 
 <?php
