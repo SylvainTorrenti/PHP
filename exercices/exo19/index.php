@@ -6,14 +6,12 @@ $titre = "Exo 19"; // Mettre le titre de la page
 <?php
 $personnes = ["p1" => ["nom" => "Clément", "age" => 25, "sexe" => true], "p2" => ["nom" => "Mathilde", "age" => 19, "sexe" => false]];
 foreach ($personnes as $key => $personne) {
-
     foreach ($personne as $clef => $valeur) {
-        if ($personne["sexe"] == true) {
-            echo $clef . " : " . $valeur . "<br>";
+        if ($clef != "sexe" && $clef != 1) {
+            echo $clef . ':' . $valeur . '<br>';
         } else {
-            echo $clef . " : " . $valeur . "<br>";
+            echo $clef . (($clef == "sexe" && $valeur == true) ? ' : homme <br>' : ' : femme <br>');
         }
-
     }
     echo "=============";
     echo "<br>";
