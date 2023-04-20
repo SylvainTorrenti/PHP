@@ -4,7 +4,7 @@ $titre = "Exo 19"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
-$personnes = ["p1" => ["nom" => "Clément", "age" => 25, "sexe" => true], "p2" => ["nom" => "Mathilde", "age" => 19, "sexe" => false]];
+$personnes = [["nom" => "Clément", "age" => 25, "sexe" => true, [12, 14, 15, 13]], ["nom" => "Mathilde", "age" => 19, "sexe" => false]];
 foreach ($personnes as $key => $personne) {
     foreach ($personne as $clef => $valeur) {
         if ($clef != "sexe" && $clef != 1) {
