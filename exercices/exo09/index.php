@@ -7,7 +7,7 @@ $titre = "Exo 09"; // Mettre le titre de la page
 $rand = rand(1, 20);
 $i = 1;
 
-while ($rand <= 15) {
+while ($rand < 15) {
     echo "Essai $i : $rand est trop petit (<15)<br>";
     $rand = rand(1, 20);
     $i++;
