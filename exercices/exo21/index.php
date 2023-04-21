@@ -10,7 +10,15 @@ $titre = "Exo 21 - Formulaires"; // Mettre le titre de la page
 </form>
 <!-- mettre votre code ici -->
 <?php
-
+$nom = '';
+if (isset($_GET['nom'])) {
+    $nom = $_GET['nom'];
+}
+$age = '';
+if (isset($_GET['age'])) {
+    $age = $_GET['age'];
+}
+echo "$nom à $age ans";
 ?>
 
 <?php
