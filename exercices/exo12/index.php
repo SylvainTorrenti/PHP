@@ -1,10 +1,10 @@
 <?php ob_start(); //  ne pas modifier
-$titre = "Exo 12 - Fonctions"; // Mettre le titre de la page
+$titre = "Exo 12"; // Mettre le titre de la page
 ?>
 
 <!-- mettre votre code ici -->
 <?php
-function estPair($a)
+function estPair(int $a): bool
 {
     if ($a % 2 == 0) {
         return true;

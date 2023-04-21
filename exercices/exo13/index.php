@@ -4,7 +4,7 @@ $titre = "Exo 13"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
-function factorielle($a)
+function factorielle(int $a)
 {
     $Somme = 1;
     while ($a > 0) {

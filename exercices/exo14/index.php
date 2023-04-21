@@ -4,7 +4,7 @@ $titre = "Exo 14"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
-function PGCD($a, $b)
+function PGCD(int $a, int $b)
 {
     $c = 1;
     $nb1 = $a;
