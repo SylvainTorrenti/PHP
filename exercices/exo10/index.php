@@ -4,7 +4,12 @@ $titre = "Exo 10"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
+// creation des variables
 $i = 0;
+/**
+ * Creation du'une boucle do.. while(). Cela signifie que le code est executer au moins une fois avant de verifier la condition. Si celle ci est fausse la boucle recommence.
+ * ici la condition est vrai quand le premier chiffre est pair ET les deux suivant impaire
+ */
 do {
     $rand1 = rand(1, 1000);
     $rand2 = rand(1, 1000);

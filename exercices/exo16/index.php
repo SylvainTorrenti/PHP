@@ -4,11 +4,19 @@ $titre = "Exo 16"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
+/**
+ * Creation des tableau femme et homme
+ */
 $femme = ["Mathilde", "Lucie", "Veronique"];
 $homme = ["Marc", "Luc", "Clément", "Vincent"];
-
+/**
+ * Compte la longueur de chaque tableau et stock la valeur dans une variable
+ */
 $length_femme = count($femme);
 $length_homme = count($homme);
+/**
+ * Creation de boucles pour afficher le contenu des tableau 
+ */
 for ($i = 0; $i < $length_homme; $i++) {
     echo "$i : $homme[$i] <br>";
 }

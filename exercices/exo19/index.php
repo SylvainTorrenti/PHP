@@ -4,7 +4,14 @@ $titre = "Exo 19"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
+/**
+ * Creation d'un tableau de personnes qui contient des tableau d'association pour chaque personne
+ * "nom" => "Clément" singnifie que la clef "nom" à pour valeur "Clément" dans se tableau
+ */
 $personnes = [["nom" => "Clément", "age" => 25, "sexe" => true], ["nom" => "Mathilde", "age" => 19, "sexe" => false]];
+/**
+ * utilisation d'un foreach pour parcourir un tableau d'association
+ */
 foreach ($personnes as $key => $personne) {
     foreach ($personne as $clef => $valeur) {
         if ($clef != "sexe" && $clef != 1) {

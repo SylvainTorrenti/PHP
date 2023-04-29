@@ -4,6 +4,9 @@ $titre = "Exo 14"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
+/**
+ * Creation d'une fonction qui calcul le PGCD
+ */
 function PGCD(int $a, int $b)
 {
     $c = 1;
@@ -28,13 +31,16 @@ function PGCD(int $a, int $b)
 
 
 }
-
+// creation des variables
 $nb1 = 80;
 $nb2 = 692;
 $nb3 = 56952;
 $nb4 = 3444;
 $nb5 = 6593;
 $nb6 = 97;
+/**
+ * Affichage est utilisation de la fonction utilisé plus haut
+ */
 echo PGCD($nb1, $nb2) . "<br>";
 echo PGCD($nb3, $nb4) . "<br>";
 echo PGCD($nb5, $nb6) . "<br>";
