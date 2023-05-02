@@ -14,7 +14,7 @@ function consonne(string $str)
      */
     $voyelle = array("a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y");
     /**
-     *creation d'une variable contenant la nouvelle chaine de charactére
+     * creation d'une variable contenant la nouvelle chaine de charactére
      * Utilisation de la fonction str_replace.
      * str_replace =>  mettre "," entre les arguments
      * le premier argument correspond a ce qui doit être remplacé
