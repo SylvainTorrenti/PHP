@@ -7,7 +7,7 @@ $titre = "Exo 15"; // Mettre le titre de la page
 /**
  * Creation d'une fonction de remplacement
  */
-function consonne(string $str)
+function consonne(string $string)
 {
     /**
      *creation d'une variable contenant les char à remplacé
@@ -19,12 +19,13 @@ function consonne(string $str)
      * str_replace =>  mettre "," entre les arguments
      * le premier argument correspond a ce qui doit être remplacé
      * le deuxiéme argument correspond ce qui remplace
+     * le 3 eme argument correspond au string à changer
      */
-    $str = str_replace($voyelle, "", $str);
+    $str = str_replace($voyelle, "", $string);
     return $str;
 }
-$str = "bordure";
-echo " Le mot <strong>\"$str\"</strong> sans voyelle est " . consonne($str);
+$phrase = "bordure";
+echo " Le mot <strong>\"$phrase\"</strong> sans voyelle est " . consonne($phrase);
 
 
 
