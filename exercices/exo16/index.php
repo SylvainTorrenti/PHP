@@ -7,26 +7,27 @@ $titre = "Exo 16"; // Mettre le titre de la page
 /**
  * Creation des tableau femme et homme
  */
-$femme = ["Mathilde", "Lucie", "Veronique"];
-$homme = ["Marc", "Luc", "Clément", "Vincent"];
+$femmes = array("Mathilde", "Lucie", "Veronique");
+$hommes = ["Marc", "Luc", "Clément", "Vincent"];
 /**
  * Compte la longueur de chaque tableau et stock la valeur dans une variable
  */
-$length_femme = count($femme);
-$length_homme = count($homme);
+$length_femme = count($femmes);
+$length_homme = count($hommes);
 /**
  * Creation de boucles pour afficher le contenu des tableau 
  */
 for ($i = 0; $i < $length_homme; $i++) {
-    echo "$i : $homme[$i] <br>";
+    echo "$i : $hommes[$i] <br>";
 }
 echo "<br>";
 echo "********************* <br>";
 echo "<br>";
-for ($i = 0; $i < $length_femme; $i++) {
-    echo "$i : $femme[$i] <br>";
+$i = 0;
+foreach ($femmes as $femme) {
+    echo "$i : $femme <br>";
+    $i++;
 }
-
 ?>
 
 <?php

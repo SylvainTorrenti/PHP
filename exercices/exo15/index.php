@@ -25,7 +25,7 @@ function consonne(string $string)
     return $str;
 }
 $phrase = "bordure";
-echo " Le mot <strong>\"$phrase\"</strong> sans voyelle est " . consonne($phrase);
+echo " Le mot <strong>\"$phrase\"</strong> sans voyelle est <strong>\"" . consonne($phrase) . "\"</strong>";
 
 
 
