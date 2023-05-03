@@ -23,10 +23,8 @@ for ($i = 0; $i < $length_homme; $i++) {
 echo "<br>";
 echo "********************* <br>";
 echo "<br>";
-$i = 0;
-foreach ($femmes as $femme) {
-    echo "$i : $femme <br>";
-    $i++;
+foreach ($femmes as $indice => $prenom) {
+    echo "$indice : $prenom <br>";
 }
 ?>
 
