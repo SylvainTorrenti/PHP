@@ -28,11 +28,10 @@ if (isset($_GET['choix'])) {
 }
 echo "<br>";
 foreach ($animaux as $key => $animal) {
-    if ($choix == "tous") {
+    if ($choix == "tous" || $choix == $animal->getEspece()) {
         foreach ($animal as $clef => $valeur) {
             echo $clef . ' : ' . $valeur . '<br>';
         }
-        var_dump(getEspece()->$animal);
         echo "=============";
         echo "<br>";
 
