@@ -30,8 +30,8 @@ foreach ($animaux as $key => $animal) {
     if ($choix == "tous" || $choix == $animal['type']) {
         foreach ($animal as $clef => $valeur) {
             echo $clef . ' : ' . $valeur . '<br>';
-        }
 
+        }
         echo "=============";
         echo "<br>";
     }
