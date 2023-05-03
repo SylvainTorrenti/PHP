@@ -25,7 +25,7 @@ for ($i = 0; $i < $length_notes; $i++) {
      * arrondi a deux decimal grace au arugment de la fonction round ", 2" signifie que nous souhaitons une precision de 2 chiffres aprés la virgule
      */
     $average = round($sum / count($notes[$i]), 2);
-    echo "La moyenne des notes de l'élève <strong>" . $i + 1 . "</strong> est de <strong>" . $average . "</strong><br>";
+    echo "La moyenne des notes de l'élève <b>" . $i + 1 . "</b> est de <b>" . $average . "</b><br>";
 }
 
 
