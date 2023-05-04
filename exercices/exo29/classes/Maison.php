@@ -32,9 +32,9 @@ class Maison
     {
         return $this->surface;
     }
-    public function AddRow($a)
+    public function AddRow()
     {
-        echo "<tr><td>" . $a->getId() . "</td><td>" . $a->getYearCons() . "</td><td>" . $a->getRoomNb() . "</td><td>" . $a->getSurface() . "</td></tr>";
+        echo "<tr><td>" . $this->getId() . "</td><td>" . $this->getYearCons() . "</td><td>" . $this->getRoomNb() . "</td><td>" . $this->getSurface() . "</td></tr>";
 
     }
 }

@@ -20,9 +20,9 @@ $maison3 = new Maison(2010, 2, 25);
     </thead>
     <tbody>
         <?php
-        $maison1->AddRow($maison1);
-        $maison2->AddRow($maison2);
-        $maison3->AddRow($maison3);
+        $maison1->AddRow();
+        $maison2->AddRow();
+        $maison3->AddRow();
         ?>
     </tbody>
 </table>
