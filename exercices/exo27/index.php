@@ -11,6 +11,7 @@ $Medor = new Animal('Medor', 5, 'chien');
 $Diablo = new Animal('Diablo', 8, 'chat');
 $Gribouille = new Animal('Gribouille', 12, 'chat');
 $Sweety = new Animal('sweety', 19, 'chat');
+$animaux = [$Rantanplan, $Rufus, $Medor, $Diablo, $Gribouille, $Sweety];
 ?>
 <form action="" method="get">
 
