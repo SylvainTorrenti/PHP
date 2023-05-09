@@ -13,7 +13,6 @@ $Sweety = ["nom" => "Sweety", "âge" => 19, "type" => "chat"];
 $animaux = [$Rantanplan, $Rufus, $Medor, $Diablo, $Gribouille, $Sweety];
 ?>
 <form action="" method="get">
-
     <button name="choix" value="tous" type="submit">TOUS</button>
     <button name="choix" value="chien" type="submit">CHIENS</button>
     <button name="choix" value="chat" type="submit">CHATS</button>
