@@ -23,10 +23,12 @@ $note3 = '';
 if (isset($_POST['nb3'])) {
     $note3 = htmlentities($_POST['nb3']);
 }
-$notes = [$note1, $note2, $note3];
-$sum = array_sum($notes);
-$average = round($sum / count($notes));
-echo "La moyenne des notes des 3 notes est de $average";
+if (isset($_POST['nb1']) && isset($_POST['nb2']) && isset($_POST['nb3'])) {
+    $notes = [$note1, $note2, $note3];
+    $sum = array_sum($notes);
+    $average = round($sum / count($notes));
+    echo "La moyenne des notes des 3 notes est de $average";
+}
 ?>
 
 <?php

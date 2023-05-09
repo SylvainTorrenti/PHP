@@ -12,13 +12,16 @@ $titre = "Exo 21 - Formulaires"; // Mettre le titre de la page
 <?php
 $nom = '';
 if (isset($_GET['nom'])) {
-    $nom = $_GET['nom'];
+    $nom = htmlentities($_GET['nom']);
 }
 $age = '';
 if (isset($_GET['age'])) {
-    $age = $_GET['age'];
+    $age = htmlentities($_GET['age']);
 }
-echo "$nom à $age ans";
+if (isset($_GET['nom']) && isset($_GET['age'])) {
+
+    echo "$nom à $age ans";
+}
 ?>
 
 <?php

@@ -33,10 +33,11 @@ echo $arme4 . "<br>";
             fléau
         </option>
     </select>
+    <button type="submit">Valider</button>
 </form>
 
-
 <?php
+
 /**
  * Ne pa modifier
  * permet d'inclure le menu et le template

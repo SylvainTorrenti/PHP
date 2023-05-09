@@ -3,7 +3,7 @@ $titre = "Exo 22 - Formulaires"; // Mettre le titre de la page
 ?>
 
 <form action="" method="POST">
-    <input type="number" name="nombre" placeholder="saisir un nombre">
+    <input type="number" name="nombre" placeholder="saisir un nombre" required>
     <input type="submit" value="Valider">
 </form>
 
@@ -21,10 +21,13 @@ function estPair(int $a): bool
     }
     return false;
 }
-if (estPair($nombre)) {
-    echo "le nombre $nombre est pair<br>";
-} else {
-    echo "le nombre $nombre est impair<br>";
+if (isset($_POST['nombre'])) {
+
+    if (estPair($nombre)) {
+        echo "le nombre $nombre est pair<br>";
+    } else {
+        echo "le nombre $nombre est impair<br>";
+    }
 }
 ?>
 

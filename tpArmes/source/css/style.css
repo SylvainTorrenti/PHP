@@ -1,0 +1,13 @@
+.weapon {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.weaponProp {
+    display: flex;
+    flex-direction: row;
+}
+
+.description {
+    margin-left: 18%;
+}
