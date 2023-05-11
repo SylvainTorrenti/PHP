@@ -47,15 +47,7 @@ if (isset($_POST['year'])) {
 echo "<br>";
 foreach ($voitures as $key => $voiture) {
     if (($marque == "tous" && $year == "tous") || ($marque == "tous" && $year == $voiture->getYear()) || ($year == "tous" && $marque == $voiture->getBrand()) || ($marque == $voiture->getBrand() && $year == $voiture->getYear())) {
-        echo 'model : ' . $voiture->getModel();
-        echo "<br>";
-        echo 'brand  : ' . $voiture->getBrand();
-        echo "<br>";
-        echo 'color  : ' . $voiture->getColor();
-        echo "<br>";
-        echo 'year  : ' . $voiture->getYear();
-        echo "<br>==================";
-        echo "<br>";
+        echo $voiture;
 
     }
 }

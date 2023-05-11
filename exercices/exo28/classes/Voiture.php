@@ -29,6 +29,20 @@ class Voiture
     {
         return $this->year;
     }
+    public function __toString()
+    {
+        $string = '';
+        $string .= 'model : ' . $this->getModel();
+        $string .= "<br>";
+        $string .= 'brand  : ' . $this->getBrand();
+        $string .= "<br>";
+        $string .= 'color  : ' . $this->getColor();
+        $string .= "<br>";
+        $string .= 'year  : ' . $this->getYear();
+        $string .= "<br>==================";
+        $string .= "<br>";
+        return $string;
+    }
 }
 
 
