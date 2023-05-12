@@ -4,34 +4,35 @@ $titre = "TP 01 - Les variables"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
-$arme1 = "arme 1 : épée";
-$arme2 = "arme 2 : arc";
-$arme3 = "arme 3 : hache";
-$arme4 = "arme 4 : fléau";
+//Creation des variables
+$arme1 = "épée";
+$arme2 = "arc";
+$arme3 = "hache";
+$arme4 = "fléau";
+$arme5 = "lance";
+//creation d'un tableau contenant les variables
+$armes = [$arme1, $arme2, $arme3, $arme4, $arme5];
 ?>
 <p><b>Voici toutes les armes</b></p>
 <?php
-echo $arme1 . "<br>";
-echo $arme2 . "<br>";
-echo $arme3 . "<br>";
-echo $arme4 . "<br>";
-?>
+//Parcour du tableau en utilisant les indices comme clé
+foreach ($armes as $key => $value) {
+    echo 'Arme ' . $key + 1 . ' : ' . $value;
+    echo "<br>";
 
+}
+?>
+<!-- creation du formulaire qui affichera les données -->
 <form action="">
     <select name="weapon" id="weapon">
         <option value="">Choisir une arme</option>
-        <option value="epee">
-            épée
-        </option>
-        <option value="arc">
-            arc
-        </option>
-        <option value="hache">
-            hache
-        </option>
-        <option value="fleau">
-            fléau
-        </option>
+        <?php
+        // creation des differentes options en fonction des armes contenu dans la tableau.
+        // Si on ajoute des armes dans la tableau elles seront automatiquements ajouter dans les "options"
+        foreach ($armes as $value) {
+            echo '<option value="' . $value . '">' . $value . '</option>';
+        }
+        ?>
     </select>
     <button type="submit">Valider</button>
 </form>
