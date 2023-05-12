@@ -13,22 +13,36 @@ $titre = "TP 02 - Tableaux associatifs"; // Mettre le titre de la page
 
 <body>
     <?php
+    //creation de tableau associatif pour chaque arme
+    /**Dans ce tableau il est indiquer: 
+     * le chemin pour acceder a l'image
+     * le nom de l'arme
+     * la description de l'arme
+     * */
+
     $arme1 = ["image" => "/tpArmes/source/epee/epee1.png", "nom" => "épée", "description" => "Une arme tranchante"];
     $arme2 = ["image" => "/tpArmes/source/arc/arc1.png", "nom" => "arc", "description" => "Une arme à distance"];
     $arme3 = ["image" => "/tpArmes/source/hache/hache1.png", "nom" => "hache", "description" => "Une arme tranchante ou outil pour couper du bois"];
     $arme4 = ["image" => "/tpArmes/source/fleau/fleau1.png", "nom" => "fleau", "description" => "Une arme contondante"];
     echo "<b>Voici toutes les armes :</b><br>";
+    //Creation via php d'une <div> qui a la classe "weaponProp" qui permet de la styliser via le css lié
     echo "<div class =\"weaponProp\">";
+    //nous afficherons chaque arme avec les clés dans la variable $propriete
     foreach ($arme1 as $propriete => $value) {
+        //si la clé == "image" nous créons une balise HTML image qui contient le chemin fournit plus haut 
         if ($propriete == "image") {
             echo "<div><img src=\"/tpArmes/source/epee/epee1.png\"></div>";
+            //si la clé == "nom" nous créons une balise HTML div avec la classe "description" qui permet de la styliser via le css lié
         } elseif ($propriete == "nom") {
             echo "<div class=\"description\"><span class=\"weapon\">" . $value . '</span><br>';
         } else {
+            //sinon nous créons une balise HTML paragraphe pour afficher les valuers des clé restantes
             echo "<p>" . $value . '</p><br></div>';
         }
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!NE JAMAIS OUBLIER DE FERMER LES BALISES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
     echo "</div>";
+    //nous refaisons ce que nous avons fait precedement
     echo "<div class =\"weaponProp\">";
     foreach ($arme2 as $propriete => $value) {
         if ($propriete == "image") {
