@@ -10,10 +10,10 @@ class Maison
     public function __construct($yearCons, $roomNb, $surface)
     {
         self::$count++;
+        $this->id = self::$count;
         $this->yearCons = $yearCons;
         $this->roomNb = $roomNb;
         $this->surface = $surface;
-        $this->id = self::$count;
 
     }
     public function getId()
@@ -34,7 +34,7 @@ class Maison
     }
     public function AddRow()
     {
-        echo "<tr><td>" . $this->getId() . "</td><td>" . $this->getYearCons() . "</td><td>" . $this->getRoomNb() . "</td><td>" . $this->getSurface() . "</td></tr>";
+        echo "<tr><td>" . $this->id . "</td><td>" . $this->yearCons . "</td><td>" . $this->roomNb . "</td><td>" . $this->surface . "</td></tr>";
 
     }
 }

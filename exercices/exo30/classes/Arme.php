@@ -24,9 +24,10 @@ class Arme
     {
         return $this->id;
     }
-    public function display()
+    public function __toString()
     {
-        echo "Id : " . $this->getId() . "<br>Nom : " . $this->getName() . "<br>Puissance : " . $this->getPower() . "<br>============<br>";
+        $string = $this->id . "<br>Nom : " . $this->name . "<br>Puissance : " . $this->power . "<br>============<br>";
+        return $string;
     }
 
 }

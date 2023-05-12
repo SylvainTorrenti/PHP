@@ -1,4 +1,5 @@
 <?php
+require_once 'classes/Arme.php';
 class Joueur
 {
     private $name;
@@ -6,7 +7,7 @@ class Joueur
     private $life;
     private $weapon;
 
-    public function __construct($name, $strength, $life, $weapon)
+    public function __construct(string $name, int $strength, int $life, Arme $weapon)
     {
         $this->name = $name;
         $this->strength = $strength;
@@ -29,9 +30,10 @@ class Joueur
     {
         return $this->weapon;
     }
-    public function display()
+    public function __toString()
     {
-        echo "Nom : " . $this->getName() . "<br>Force : " . $this->getStrength() . "<br>Vie : " . $this->getLife() . "<br>Arme : " . $this->getWeapon() . "<br>";
+        $string = "Nom : " . $this->name . "<br>Force : " . $this->strength . "<br>Vie : " . $this->life . "<br>Arme : " . $this->weapon . "<br>";
+        return $string;
     }
 }
 ?>

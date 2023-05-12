@@ -4,17 +4,17 @@ $titre = "Exo 30 - Manipuler 2 classes"; // Mettre le titre de la page
 
 <!-- mettre votre code ici -->
 <?php
-require 'classes/Arme.php';
-require 'classes/Joueur.php';
+require_once 'classes/Arme.php';
+require_once 'classes/Joueur.php';
 
-$j1 = new Joueur('Sylvain', 100, 85, 1);
 $w1 = new Arme('Hache', 25);
-$j2 = new Joueur('Henry', 25, 15, 2);
 $w2 = new Arme('Baton', 3);
-$j1->display();
-$w1->display();
-$j2->display();
-$w2->display();
+$j1 = new Joueur('Sylvain', 100, 85, $w1);
+$j2 = new Joueur('Henry', 25, 15, $w2);
+
+echo $j1;
+echo $j2;
+
 ?>
 
 
