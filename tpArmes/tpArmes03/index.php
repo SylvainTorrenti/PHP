@@ -22,6 +22,7 @@ $titre = "TP 03 - La POO"; // Mettre le titre de la page
     $arme3 = new Arme("/tpArmes/source/hache/hache1.png", "hache", "Une arme tranchante ou outil pour couper du bois");
     $arme4 = new Arme("/tpArmes/source/fleau/fleau1.png", "fleau", "Une arme contondante");
     echo "<b>Voici toutes les armes :</b><br>";
+    //vu que la fonction __toString a été redefinit nous pouvons directement ecrir "echo $arme1;" car la fonction redefini est automatiquement appeler.
     echo $arme1;
     echo $arme2;
     echo $arme3;
